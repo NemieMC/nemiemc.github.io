@@ -1,0 +1,70 @@
+:root {
+    --lime: #0ed307;
+    --dark-lime: #10b80a;
+    --borderani-color: #6eff69;
+    --lime-shadow: #042c02;
+    --border-width: 2px;
+    --background-black: #0f0f0f;
+    --background-green: #011801;
+    --ldngbg-color: #022202;
+    --ldngbg-color-opacity: #02220200;
+}
+body {
+    margin: 0%;
+    padding: 0%;
+    font-family: "Bebas Neue", Arial, Helvetica, sans-serif;
+    background: radial-gradient(circle, var(--background-green) 0%, var(--background-black) 100%);
+    background-repeat: repeat-x;
+    background-position: bottom;
+    background-attachment: fixed;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+div.sectioncenter {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+div.titleborder {
+    border: var(--border-width) solid var(--dark-lime);
+    transform: skewX(-12deg);
+}
+div.txtplaceholder {
+    padding: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transform: skewX(12deg);
+}
+p.txt {
+    font-size: 1.4rem;
+    background: -webkit-linear-gradient(var(--lime), var(--lime-shadow));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin: 5px;
+    letter-spacing: normal;
+    transition: letter-spacing 500ms ease-in-out;
+}
+h1.title {
+    font-size: 2.6rem;
+    background: -webkit-linear-gradient(var(--lime), var(--lime-shadow));
+    background-clip: text;
+    -webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	animation: titleAni 3s ease-in-out infinite;
+    margin: 5px;
+    letter-spacing: normal;
+    transition: letter-spacing 500ms ease-in-out;
+}
+p.txt:hover {
+    letter-spacing: 0.6px;
+    transition: letter-spacing 500ms ease-in-out;
+}
+h1.title:hover {
+    letter-spacing: 1.6px;
+    transition: letter-spacing 500ms ease-in-out;
+}
